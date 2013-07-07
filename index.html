@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ODA & Health ODA  Budget Mapping 2010</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/foundicons.css"/>
+
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4v_i3EJPTCCysbRmyPlLgxz3WO7BZVIA&sensor=false"></script>
+	<script data-main="js/main" src="js/libs/require/require.js"></script>
+</head>
+<body>
+
+
+<div id="container">
+    <header id="mainHeader">
+        <div id="headerContent">
+            <div id="title">ODA & Health ODA  Budget Mapping 2010</div>
+
+            <ul>
+                <li id="li_oda" class="header-bt"><a href="./#oda">開発分野</a></li>
+                <li id="li_hoken" class="header-bt"><a href="./#hoken">保健分野</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="map_canvas"></div>
+
+    <div id="color-ref">
+        <ul>
+            <li><div class='developed-color color'></div><div class="text">ODA供与国</div></li>
+            <li><div class='developing-color color'></div><div class="text">ODA受取国</div></li>
+        </ul>
+    </div>
+
+</div>
+
+<section class="wrapper">
+    <div class="content">
+        <dd class="head">ODA & Health ODA  Budget Mapping 2010</dd>
+
+        <div class="youtube">
+            <iframe type="text/html" width="640" height="360"
+                    src="http://www.youtube.com/embed/BWsDxQ38WZI?autoplay=1&controls=0&loop=0"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+        <dd class="caption">「<a href="http://www.tsutagra.go.jp/download/jigh.xlsx" target="_blank">主要先進国発　発展途上国向け　開発援助全体及び保健分野における資金量（2010年）</a>」を使い、作成しています。</dd>
+        <dd class="social"><a href="https://github.com/kenjiSpecial/tsutagra_theme7_oda" target="_blank">github</a>上にて作成したコードを公開しています。ご自由にお使いください。</dd>
+        <div id="remove"><i class="foundicon-remove"></i></div>
+
+
+    </div>
+</section>
+
+</body>
+<script type="text/javascript">
+    (function(){
+        function remove_down(e){
+            var wrapper_tag = remove_tag.parentNode.parentNode
+
+            var className = wrapper_tag.className;
+            wrapper_tag.className = className + " display_none";
+
+            setTimeout(function(){
+                wrapper_tag.style.display = "none";
+            } , 300)
+        }
+
+        var remove_tag;
+
+        remove_tag = document.getElementById("remove");
+
+
+
+        remove_tag.addEventListener("mousedown", remove_down, false);
+    })()
+</script>
+</html>
