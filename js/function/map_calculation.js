@@ -116,6 +116,8 @@ define([
             google.maps.event.addListener(support_country_circle, 'click', function (event) {
                 curSelectCounrty = this;
 
+
+
                 var i;
                 if (prevSelectCountry != undefined) {
                     for (i in prevSelectCountry.countryData) {
@@ -123,6 +125,8 @@ define([
                         line.setVisible(false);
                     }
                 }
+
+                if(curSelectCounrty == prevSelectCountry) return;
 
                 // ----------------------
 
