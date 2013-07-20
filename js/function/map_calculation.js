@@ -81,9 +81,9 @@ define([
 
                     if (supported_money > 0) {
                         if(type == "developed"){
-                            drawing_line(map, support_country, support_center, supported_center, supported_money / (support_money), fillColor, countryData);
+                            drawing_line(map, support_country, support_center, supported_center, supported_money / 1000, fillColor, countryData);
                         }else{
-                            drawing_line(map, support_country, supported_center, support_center, supported_money / (support_money), fillColor, countryData);
+                            drawing_line(map, support_country, supported_center, support_center, supported_money / 1000, fillColor, countryData);
 
                         }
                     }
