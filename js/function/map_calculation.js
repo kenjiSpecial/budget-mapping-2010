@@ -126,7 +126,10 @@ define([
                     }
                 }
 
-                if(curSelectCounrty == prevSelectCountry) return;
+                if(curSelectCounrty == prevSelectCountry) {
+                    prevSelectCountry = undefined;
+                    return;
+                }
 
                 // ----------------------
 
