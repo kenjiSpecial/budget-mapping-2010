@@ -129,7 +129,7 @@ div#container div#color-ref ul li div.developing-color {
 /* line 65, ../sass/screen.scss */
 header#mainHeader {
   width: 100%;
-  min-height: 85px;
+  min-height: 70px;
   height: 10%;
 }
 /* line 73, ../sass/screen.scss */
@@ -152,13 +152,13 @@ header#mainHeader div#headerContent div#title em {
 /* line 91, ../sass/screen.scss */
 header#mainHeader div#headerContent ul {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 /* line 95, ../sass/screen.scss */
 header#mainHeader div#headerContent ul li {
   float: left;
   margin-right: 25px;
-  font-size: 18px;
+  font-size: 14px;
 }
 /* line 99, ../sass/screen.scss */
 header#mainHeader div#headerContent ul li a {
